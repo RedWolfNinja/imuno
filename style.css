@@ -1,0 +1,53 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div {
+    display: inline;
+}
+
+li {
+    list-style-type: none;
+}
+
+.listpar {
+    padding-left: 2em;
+
+}
+
+.list1 {
+    font-weight: bold;
+}
+.navbar {
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+
+}
+.pagelink {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    padding: 0.4em;
+    border: 1em;
+    background-color: coral;
+    
+}
+
+.pagelink:hover {
+    background-color: rgb(184, 115, 249);
+
+}
+
+.pagelink:link {
+    text-decoration: none;
+}
+
+.pagelink:active {
+    color: black;
+    text-decoration: none;
+}
+
+.pagelink:visited {
+    color: black;
+    text-decoration: none;
+}
