@@ -2,29 +2,13 @@ body {
     font-family: Tahoma, sans-serif;
     background-color: #FAF1E4;
     background-image: url(background.png);
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-position: center;
     background-size: cover;
-    /* color: #d8d8d8; */
+
     color: white;
-    margin: auto;
+    margin: 3em;
 }
-
-/* p {
-    margin-left: 2em;
-} */
-/* 
-h1 {
-    margin-left: 2em;
-}
-
-h2 {
-    margin-left: 2em;
-}
-
-h3 {
-    margin-left: 2em;
-} */
 
 div {
     display: inline;
@@ -45,7 +29,8 @@ li {
 .navbar {
     text-align: center;
     display: inline;
-    
+    z-index: 999;
+
 }
 
 .pagelink {
@@ -87,15 +72,14 @@ li {
     position: fixed;
     top: 0;
     margin: 0 auto;
-    /* display: flex; */
     align-items: center;
-    float:left;
+    float: left;
 
 }
 
 .navli {
     display: inline;
-    float:left;
+    float: left;
 
 
 }
@@ -103,11 +87,11 @@ li {
 .navli a {
     padding: 14px 16px;
     font-size: 1.5em;
-    display:block;
+    display: block;
     border-radius: 16px;
     margin: 2px;
     align-items: center;
-    
+
 
 }
 
@@ -124,18 +108,20 @@ li {
 
 #imunoText {
     margin-right: 4em;
-    float: right;
+    margin-left: auto;
+    margin-right: auto;
     overflow: hidden;
     font-family: Tahoma, sans-serif;
-    background-color: #9eb384;
-    width: 550px;
-    height: 550px;
-    border-radius: 50%;
+    background-color: #383838;
+    height: auto;
+    width: auto;
+    border-radius: 16px;
     display: flex;
-    /* or inline-flex */
     align-items: center;
     justify-content: center;
-    color: black;
+    color: white;
+    padding: 3em;
+    font-size: 20px;
 }
 
 
@@ -160,19 +146,38 @@ li {
     margin: 2em;
     font-size: 20px;
 }
+
 #imunoNoteikumi {
-    margin-left:2em;
-    text-align: center;
-    font-size: 40px;
+
+    text-align: left;
+    width: 60%;
+    position: absolute;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 80px;
+}
+@media screen and (max-width: 1080px) {
+    #imunoNoteikumi {
+        position:static;
+}
+    body {
+    margin:0;
+}
+    .PATOIMUNOtext {
+    font-size: 10px;
 }
 
+}
 
-#iunoBasicInfo {
-    float: left;
-    margin-left: 30em;
+.PATOIMUNOtext {
+    font-size: 20px;
+    text-align: right;
+}
+
+.imunoBasicInfo {
     background-color: #9eb384;
-    width: 450px;
-    height: 450px;
+    width: 430px;
+    height: 430px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -180,7 +185,13 @@ li {
     color: black;
     font-weight: bold;
     text-align: center;
+    float: right;
+    overflow: hidden;
+    position: static;
+}
 
+#noteikContent {
+    position: absolute;
 }
 
 
@@ -198,4 +209,72 @@ li {
     width: 28%;
     margin-bottom: 8em;
     margin-right: 2em;
+}
+
+.kompletsUl {
+    list-style-type: disc;
+}
+
+.komplektsLi {
+    font-size: 20px;
+}
+
+
+.collapsable {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active,
+.collapsable:hover {
+    background-color: #ccc;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}
+
+.collapsable:after {
+    content: '\02795';
+    /*+*/
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    /*-*/
+}
+
+.kaLi {
+    list-style-type: decimal;
+}
+
+.kaUl {
+    font-weight: bold;
+}
+
+.gaitaUl {
+    font-weight: bold;
+}
+
+.gaitaLi {
+    list-style-type: decimal;
+    font-size: 20px;
+}
+
+.gaitaLi2 {
+    list-style-type: circle;
+    font-size: 15px;
 }
